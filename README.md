@@ -7,7 +7,7 @@ General Issue: I wanted this to work with Steam Input and Joyshockmapper but I r
 USE AT YOUR OWN RISK!: I only made this and am sharing this so actual devs can implement something like this natively. I have no clue if this will be flagged by anti-cheat, so I have to give an obligatory warning.
 
 Gyro Gravity Breakdown:
-
+-
 Yaw X and Pitch Y have been separated to allow for full accurate control of a user's gyro ratio. By default, you only need to adjust Yaw settings for 1:1 sensitivity.
 
 Synchronize Curves ensure that the same curve is used for X and Y. If you want to, you can turn it off to mix and match curves. I wouldn’t actually suggest this at all but I decided to add the option anyways cause why not.
@@ -17,7 +17,7 @@ Synchronize Settings lets you enable/disable separate X and Y settings. So inste
 Dots Per 360: Just like Steam Input, place your Dots Per 360 here for proper calibration. This will scale everything so 1 Count Per Second is the same as 1 Degree Per Second.
 
 Curve Types:
-
+-
 Natural: This curve is basically “true linear”. It is the most simple curve that gives you the most control just like linear but better. This provides an extremely smooth transition between sensitivities and I would highly recommend this as a default.
 
 Linear: This is typically what people think of when they say Accel feels bad. While simple logic says the quickest path is a straight line, in this case, a straight line is not the smoothest.
@@ -27,13 +27,13 @@ Power: I’m fairly certain this is what Steam Inputs old accel settings use. It
 Sigmoid: If you plan on using an Offset, this is the only curve I’d recommend doing that with. This curve is similar to Natural but is visually much smoother. It’s much more computationally heavy than the other curves though, so I don’t know how much I suggest using this curve.
 
 Gain:
-
+-
 This is a feature from Raw Accel that I tried my best to replicate (I might be doing it a little bit differently). Essentially, it determines if the fundamental curve is used directly as a Sensitivity Curve or treated as a Velocity Curve.
 
 If you measure the Velocity of any Sensitivity Curve, you can produce a Velocity curve that represents what the relative change in sensitivity will feel like. So with Gain on, we can then pretend that our Original Sensitivity Curve IS the Velocity Curve. We then do some reverse calculations to produce a New Sensitivity Curve which will produce a New Velocity Curve that resembles our Original Sensitivity Curve. Combined with a Natural Curve, this produces a very smooth transition between sensitivities. 
 
 Other Settings:
-
+-
 Enable Limit: This is only available for Linear and Power. Does what it says, it caps your sensitivity at a target.
 
 Target Gyro Ratio: How high you want your sensitivity.
@@ -49,7 +49,7 @@ Target Degrees Recommendation: This is a very simple linear-based calculation I 
 Offset: I flat-out don’t recommend using this (except on Sigmoid). It delays when your sensitivity begins to increase.
 
 Graphs:
-
+-
 Sensitivity: A very straightforward representation of what your sensitivity actually is.
 
 Jolt: This represents what your sensitivity will feel like. What you want is a smooth transition from high to low. Imagine you’re are a skateboarder, would you rather have a nice smooth ramp to roll down or a cliff with a hard stop?
