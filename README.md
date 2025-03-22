@@ -30,7 +30,7 @@ Gain:
 -
 This is a feature from Raw Accel that I tried my best to replicate (I might be doing it a little bit differently). Essentially, this determines if the fundamental curve is used directly as a Sensitivity Curve or if it's treated as a Velocity Curve.
 
-If you measure the Velocity of any Sensitivity Curve, you can produce a Velocity curve that represents what the relative change in sensitivity will feel like. So with Gain on, we can then pretend that our Original Sensitivity Curve IS the Velocity Curve. We then do some reverse calculations to produce a New Sensitivity Curve which will produce a New Velocity Curve that resembles our Original Sensitivity Curve.
+If you measure the Velocity of any Sensitivity Curve, you can produce a Velocity curve that represents what the relative change in sensitivity will feel like. So with Gain on, we can then pretend that our Original Sensitivity Curve IS the Velocity Curve. By performing some reverse calculations, we can create a New Sensitivity Curve which will produce a New Velocity Curve that resembles our Original Sensitivity Curve. So now, your Sensitivity Curve will "feel" like how it originally looked.
 
 Other Settings:
 -
