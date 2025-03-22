@@ -5,7 +5,7 @@ BUG: I literally don’t know how to code, so this thing is held together with d
 General Issue: I wanted this to work with Steam Input and Joyshockmapper but I ran into an unfixable issue. Mouse output gets properly replaced when you are on desktop but as soon as you are in a game, Steam Input and Joyshockmappers output do not get fully blocked. This results in the base 1:1 sensitivity getting added to the modified Gyro Gravity output. This is probably has something to do with inputs happening at the Raw Input level.
 
 USE AT YOUR OWN RISK!: I only made this and am sharing this so actual devs can implement something like this natively. I have no clue if this will be flagged by anti-cheat, so I have to give an obligatory warning.
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Gyro Gravity Breakdown:
 Yaw X and Pitch Y have been separated to allow for full accurate control of a user's gyro ratio. By default, you only need to adjust Yaw settings for 1:1 sensitivity.
 Synchronize Curves ensure that the same curve is used for X and Y. If you want to, you can turn it off to mix and match curves. I wouldn’t actually suggest this at all but I decided to add the option anyways cause why not.
