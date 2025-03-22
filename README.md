@@ -1,0 +1,5 @@
+This is a custom mouse acceleration program I slapped together with the help of Grok that showcases how I feel acceleration could be implemented for gaming. I basically reverse-engineered Raw Accels curves and set up a more intuitive UI specifically for gyro. I call it "Gyro Gravity" because sensitivity dictates how "heavy" your gyro aim/gun feels in game. Since most gamers react to acceleration with a predisposed bias to turn it off, I think it’d be a good idea not to call this acceleration if implemented in a game. Steadying is already a pretty good name too.
+
+BUGS: I literally don’t know how to code, so this thing is held together with duct tape. The only major bug I think I've noticed is that uncapping the linear curve seems to cause an incorrect sensitivity response and I have no clue why.
+
+General Issue: I wanted this to work with Steam Input and Joyshockmapper but I ran into an unfixable issue. Mouse output gets properly replaced when you are on desktop but as soon as you are in a game, Steam Input and Joyshockmappers output do not get fully blocked. This results in the base 1:1 sensitivity getting added to the modified Gyro Gravity output. 
