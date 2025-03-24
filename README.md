@@ -4,7 +4,7 @@ BUG: I literally don’t know how to code, so this thing is held together with d
 
 General Issue: I wanted this to work with Steam Input and Joyshockmapper but I ran into an unfixable issue. Mouse output gets properly replaced when you are on desktop but as soon as you are in a game, Steam Input and Joyshockmappers output do not get fully blocked. This results in the base 1:1 sensitivity getting added to the modified Gyro Gravity output. This is probably has something to do with inputs happening at the Raw Input level.
 
-USE AT YOUR OWN RISK!: I only made this and am sharing it so actual devs can implement something like this natively. I have no clue if this will be flagged by anti-cheat, so I have to give an obligatory warning.
+USE AT YOUR OWN RISK!: I only made this so  devs can implement something like this natively themselves. I have no clue if this will be flagged by anti-cheat, so I have to give an obligatory warning.
 -
 Gyro Gravity Breakdown:
 -
