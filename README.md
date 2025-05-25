@@ -38,11 +38,11 @@ Enable Limit: This is only available for Linear and Power. Does what it says, it
 
 Target Gyro Ratio: How high you want your sensitivity.
 
-Mirror Sense: A big problem I have with Steadying is that your sensitivity starts at 0. I am not a fan of this as it destroys micro precision. This may seem ironic since low sensitivity is good for precision. To understand why 0 is bad, I need to explain scaling. To make your sensitivity twice as light relative to 1:1 reality, you multiply 2x. To make it twice as heavy though, you multiply .5x. When you multiply by 0, you are literally making your gyro INFINITLY heavier. So my suggestion is this, Mirror Sense. When enabled, this will automatically apply a lower sensitivity based on your Target Gyro Ratio. For example, if you use a 4:1 ratio, then your Base Gyro is now 1:4 or .25x.
+Mirror Sense: A big problem I have with Steadying is that your sensitivity starts at 0. I am not a fan of this as it destroys micro precision. This may seem ironic since low sensitivity is good for precision. To understand why 0 is bad, I need to explain scaling. To make your sensitivity twice as light relative to 1:1 reality, you multiply 2x. To make it twice as heavy though, you multiply .5x. When you multiply by 0, you are literally making your gyro INFINITELY heavier. So my suggestion is this: Mirror Sense. When enabled, this will automatically apply a lower sensitivity based on your Target Gyro Ratio. For example, if you use a 4:1 ratio, then your Base Gyro is now 1:4 or .25x.
 
 Base Gyro Ratio: How low/heavy you want the start of your sensitivity to feel.
 
-Target Degrees Per Second: At what speed you want to reach your Target Gyro Ratio.
+Target Degrees Per Second: At what speed do you want to reach your Target Gyro Ratio?
 
 Target Degrees Recommendation: This is a very simple linear-based calculation I came up with for Target Degrees. Using 1:1 reality as a reference point, there is a max speed at which the distance traveled is the same as 1:1 for any given Target Gyro Ratio. For example, 4:1 will intercept 1:1 at 4 Degrees/S with a Target Degree of 16. In other words, your 4x Ratio will travel the same distance as 1:1 at 4x Speed. Any Target Degree further will actually be “heavier” than 1:1. Anything lower will feel lighter. I only suggest staying within a range because I calculate this value with Target Ratio^2. Feel free to use any value you want, all the way down to 0.
 
@@ -53,10 +53,10 @@ Record:
 Start Peak Record: This records the average peak movement of your mouse over a given period of time (default 10 seconds) before acceleration is applied. You must first set up Dots per 360 for this to work correctly.
 Record Duration (Seconds): How long in seconds do you want to record your average peak degrees per second?
 
-From my theory crafting, I think there are main 3 ways to use this.
-1 - Hold your controller with outstretched arms to measure how stable you can actually aim without the support of your lap/desk.
-2 - Spam your fire button (trigger/bumper) to see how much movement happens when you shoot in a game. 
-3 - Using just your wrists, flick you controller as fast as you can to see what your physical speed limit is.
+From my theory crafting, I think there are 3 main ways to use this.
+1 - Hold your controller with outstretched arms to measure how stable you can actually aim without the support of your lap/desk. If you don't want to notice stabilization, this should do fine.
+2 - Spam your fire button (trigger/bumper) to see how much movement happens when you shoot in a game. If you want to ensure that you hit precise targets, this would be the best place to start.
+3 - Using just your wrists, flick your controller as fast as you can to see what your maximum flick speed is. If you want accel to cover your full range of motion so you never feel a peak, then you could try this.
 Using the results of any of these measurements, you should be able to make more meaningful decisions about what you want out of your gyro acceleration settings. Specifically, your Target Degrees per (S).
 
 Graphs:
