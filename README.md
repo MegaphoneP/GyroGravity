@@ -48,6 +48,17 @@ Target Degrees Recommendation: This is a very simple linear-based calculation I 
 
 Offset: I flat-out don’t recommend using this (except on Sigmoid). It delays when your sensitivity begins to increase.
 
+Record:
+-
+Start Peak Record: This records the average peak movement of your mouse over a given period of time (default 10 seconds) before acceleration is applied. You must first set up Dots per 360 for this to work correctly.
+Record Duration (Seconds): How long in seconds do you want to record your average peak degrees per second?
+
+From my theory crafting, I think there are main 3 ways to use this.
+1 - Hold your controller with outstretched arms to measure how stable you can actually aim without the support of your lap/desk.
+2 - Spam your fire button (trigger/bumper) to see how much movement happens when you shoot in a game. 
+3 - Using just your wrists, flick you controller as fast as you can to see what your physical speed limit is.
+Using the results of any of these measurements, you should be able to make more meaningful decisions about what you want out of your gyro acceleration settings. Specifically, your Target Degrees per (S).
+
 Graphs:
 -
 Sensitivity: A very straightforward representation of what your sensitivity actually is.
