@@ -57,6 +57,7 @@ From my theory crafting, I think there are 3 main ways to use this.
 1 - Hold your controller with outstretched arms to measure how stable you can actually aim without the support of your lap/desk. If you don't want to notice stabilization, this should do fine.
 2 - Spam your fire button (trigger/bumper) to see how much movement happens when you shoot in a game. If you want to ensure that you hit precise targets, this would be the best place to start.
 3 - Using just your wrists, flick your controller as fast as you can to see what your maximum flick speed is. If you want accel to cover your full range of motion so you never feel a peak, then you could try this.
+
 Using the results of any of these measurements, you should be able to make more meaningful decisions about what you want out of your gyro acceleration settings. Specifically, your Target Degrees per (S).
 
 Graphs:
