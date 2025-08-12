@@ -1,8 +1,6 @@
-This is a custom mouse acceleration program I slapped together with the help of Grok, Deepseek, and Gemini that showcases how I feel acceleration should be implemented for gyro gaming. I basically reverse-engineered Raw Accels curves and set up a more intuitive UI specifically for gyro. I call it "Gyro Gravity" because sensitivity dictates how "heavy" your gyro aim feels in-game.
+This is a custom mouse acceleration program I slapped together with the help of Grok, Deepseek, and Gemini that showcases how I feel acceleration should be implemented for gyro gaming. I basically reverse-engineered Raw Accels' curves and set up a more intuitive UI specifically for gyro. I call it "Gyro Gravity" because sensitivity dictates how "heavy" your gyro aim feels in-game.
 
-BUG: I literally don’t know how to code, so this thing is held together with actual duct tape. Disabling the Limit for the linear curve seems to cause an incorrect sensitivity response, and I have no clue why.
-
-General Issue: I wanted this to work with Steam Input and Joyshockmapper but I ran into an unfixable issue. Mouse output gets properly replaced when you are on desktop but as soon as you are in a game, Steam Input and Joyshockmappers output do not get fully blocked. This results in the base 1:1 sensitivity getting added to the modified Gyro Gravity output. This is probably has something to do with inputs happening at the Raw Input level.
+General Issue: I wanted this to work with Steam Input and Joyshockmapper, but I ran into an unfixable issue. Mouse output gets properly replaced when you are on the desktop, but as soon as you are in a game, Steam Input and Joyshockmappers output do not get fully blocked. This results in the base 1:1 sensitivity getting added to the modified Gyro Gravity output. This is probably has something to do with inputs happening at the Raw Input level. The output will also randomly cut off.
 
 HEADS UP!: I only made this so actual devs can implement something like this natively themselves. Currently, it only works on desktop and shuts off randomly if you actually try to use it in-game anyway, so don't bother.
 -
