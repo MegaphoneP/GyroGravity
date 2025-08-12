@@ -6,29 +6,29 @@ HEADS UP!: I only made this so actual devs can implement something like this nat
 -
 Gyro Gravity Breakdown:
 -
-Yaw X and Pitch Y have been separated to allow for full accurate control of a user's gyro ratio. By default, you only need to adjust Yaw settings for 1:1 sensitivity.
+Yaw X and Pitch Y have been separated to allow for full, accurate control of a user's gyro ratio. By default, you only need to adjust the Yaw settings for 1:1 sensitivity.
 
 Synchronize Curves ensure that the same curve is used for X and Y. If you want to, you can turn it off to mix and match curves. I wouldn’t actually suggest this at all but I decided to add the option anyways cause why not.
 
 Synchronize Settings lets you enable/disable separate X and Y settings. So instead of juggling awkward base ratio settings, I feel it would be better to let users set exact ratios this way.
 
-Dots Per 360: Just like Steam Input, place your Dots Per 360 here for proper calibration. This will scale everything so 1 Count Per Second is the same as 1 Degree Per Second.
+Dots Per 360: Just like Steam Input, place your Dots Per 360 here for proper calibration. This will scale everything, so 1 Count Per Second is the same as 1 Degree Per Second.
 
 Curve Types:
 -
-Natural: This curve is basically “true linear”. It is the most simple curve that gives you the most control just like linear but better. This provides an extremely smooth transition between sensitivities and I would highly recommend this as a default.
+Natural: This curve is basically “true linear”. It is the most simple curve that gives you the most control, just like linear, but better. This provides an extremely smooth transition between sensitivities, and I would highly recommend this as a default.
 
 Linear: This is typically what people think of when they say Accel feels bad. While simple logic says the quickest path is a straight line, in this case, a straight line is not the smoothest.
 
-Power: I’m fairly certain this is what Steam Inputs old accel settings use. It requires an extra setting for an Exponent and is more finicky to set up because of this. Unlike Natural though, a power curve could allow your sensitivity to increase infinitely past a certain point depending on your Exponent. An Exponent of .05 is what Valve uses in their games.
+Power: I’m fairly certain this is what Steam Input's old accel settings use. It requires an extra setting for an Exponent and is more finicky to set up because of this. Unlike Natura, though, a power curve could allow your sensitivity to increase infinitely past a certain point depending on your Exponent. An Exponent of .05 is what Valve uses in their games.
 
-Sigmoid: If you plan on using an Offset, this is the only curve I’d recommend doing that with. This curve is similar to Natural but is visually much smoother. It’s much more computationally heavy than the other curves though, so I don’t know how much I suggest using this curve.
+Sigmoid: If you plan on using an Offset, this is the only curve I’d recommend doing that with. This curve is similar to Natural but is visually much smoother. It’s much more computationally heavy than the other curves, though, so I don’t know how much I suggest using this curve.
 
 Gain:
 -
 This is a feature from Raw Accel that I tried my best to replicate (I might be doing it a little bit differently). Essentially, this determines if the fundamental curve is used directly as a Sensitivity Curve or if it's treated as a Velocity Curve.
 
-If you measure the Velocity of any Sensitivity Curve, you can produce a Velocity curve that represents what the relative change in sensitivity will feel like. So with Gain on, we can then pretend that our Original Sensitivity Curve IS the Velocity Curve. By performing some reverse calculations, we can create a New Sensitivity Curve which will produce a New Velocity Curve that resembles our Original Sensitivity Curve. So now, your Sensitivity Curve will "feel" like how it originally looked.
+If you measure the Velocity of any Sensitivity Curve, you can produce a Velocity curve that represents what the relative change in sensitivity will feel like. So with Gain on, we can then pretend that our Original Sensitivity Curve IS the Velocity Curve. By performing some reverse calculations, we can create a New Sensitivity Curve that will produce a New Velocity Curve that resembles our Original Sensitivity Curve. So now, your Sensitivity Curve will "feel" like how it originally looked.
 
 Other Settings:
 -
@@ -36,7 +36,7 @@ Enable Limit: This is only available for Linear and Power. Does what it says, it
 
 Target Gyro Ratio: How high you want your sensitivity.
 
-Mirror Sense: A big problem I have with Steadying is that your sensitivity starts at 0. I am not a fan of this as it destroys micro precision. This may seem ironic since low sensitivity is good for precision. To understand why 0 is bad, I need to explain scaling. To make your sensitivity twice as light relative to 1:1 reality, you multiply 2x. To make it twice as heavy though, you multiply .5x. When you multiply by 0, you are literally making your gyro INFINITELY heavier. So my suggestion is this: Mirror Sense. When enabled, this will automatically apply a lower sensitivity based on your Target Gyro Ratio. For example, if you use a 4:1 ratio, then your Base Gyro is now 1:4 or .25x.
+Mirror Sense: A big problem I have with Steadying is that your sensitivity starts at 0. I am not a fan of this as it destroys micro precision. This may seem ironic since low sensitivity is good for precision. To understand why 0 is bad, I need to explain scaling. To make your sensitivity twice as light relative to 1:1 reality, you multiply 2x. To make it twice as heavy, though, you multiply .5x. When you multiply by 0, you are literally making your gyro INFINITELY heavier. So my suggestion is this: Mirror Sense. When enabled, this will automatically apply a lower sensitivity based on your Target Gyro Ratio. For example, if you use a 4:1 ratio, then your Base Gyro is now 1:4 or .25x.
 
 Base Gyro Ratio: How low/heavy you want the start of your sensitivity to feel.
 
